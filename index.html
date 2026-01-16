@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muhammad Sharyar Bin Zafar - Unity Game Developer Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <!-- EmailJS -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <a href="#home">Muhammad Sharyar</a>
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#services" class="nav-link">Services</a></li>
+                <li class="dropdown">
+                    <a href="#portfolio" class="nav-link">Portfolio <i class="fas fa-chevron-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#portfolio" data-filter="all">All Games</a></li>
+                        <li><a href="#portfolio" data-filter="puzzle">Puzzle</a></li>
+                        <li><a href="#portfolio" data-filter="simulation">Simulation</a></li>
+                    </ul>
+                </li>
+                <li><a href="#resume" class="nav-link">Resume</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="hero">
+        <div class="hero-background">
+            <img src="images/profile-photo.jpg" alt="Muhammad Sharyar Bin Zafar" class="hero-bg-image" onerror="this.style.display='none'">
+            <div class="hero-overlay"></div>
+        </div>
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">I am <span class="highlight">Muhammad Sharyar Bin Zafar</span></h1>
+                    <p class="hero-subtitle"><span id="typing-text"></span><span class="typing-cursor">|</span></p>
+                    <div class="hero-buttons">
+                        <a href="https://play.google.com/store/apps/dev?id=4989665937495641401" class="btn btn-primary btn-advanced" target="_blank">
+                            <span class="btn-icon"><i class="fab fa-google-play"></i></span>
+                            <span class="btn-text">View My Games on Play Store</span>
+                            <span class="btn-arrow"><i class="fas fa-arrow-right"></i></span>
+                        </a>
+                        <a href="https://apps.apple.com/us/developer/abid-nadeem/id1364514551" class="btn btn-primary btn-advanced" target="_blank">
+                            <span class="btn-icon"><i class="fab fa-apple"></i></span>
+                            <span class="btn-text">View My Games on App Store</span>
+                            <span class="btn-arrow"><i class="fas fa-arrow-right"></i></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About me</h2>
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="images/profile-photo.jpg" alt="Muhammad Sharyar Bin Zafar" onerror="this.style.display='none'">
+                </div>
+                <div class="about-text">
+                    <p>
+                        I'm Muhammad Sharyar Bin Zafar, a Unity game developer who's been building mobile games for the past few years. My journey into game development started from a young age - I was a huge fan of GTA Vice City and spent countless hours playing it. I was always curious about how games are made, which questions sparked my interest in game development. This childhood passion eventually led me to pursue a career in creating games myself.
+                    </p>
+                    <p>
+                        I completed my BS-IT from University of Okara, which gave me a solid foundation in programming and software development. What started as a hobby quickly turned into a passion for creating games that people actually enjoy playing.
+                    </p>
+                    <p>
+                        My focus is on developing complete games from start to finish - from initial concept to final product. I work with Unity, C#, and integrate various SDKs for analytics, ads, and monetization. Most of my work involves simulation games, puzzle games, and hyper-casual titles.
+                    </p>
+                    <p>
+                        When I'm not coding, I'm usually thinking about new game mechanics or ways to improve player experience. I believe in creating games that are not just fun, but also polished and well-optimized for mobile devices. Every project teaches me something new, and that's what keeps me motivated.
+                    </p>
+                </div>
+                <div class="about-info">
+                    <div class="info-item">
+                        <strong>Name:</strong> Muhammad Sharyar Bin Zafar
+                    </div>
+                    <div class="info-item">
+                        <strong>Profile:</strong> Unity Game Developer
+                    </div>
+                    <div class="info-item">
+                        <strong>Email:</strong> sheryrao30@gmail.com
+                    </div>
+                    <div class="info-item">
+                        <strong>Phone:</strong> (+92) 315-6389303
+                    </div>
+                </div>
+            </div>
+            <div class="skills">
+                <h3 class="skills-title">Skills</h3>
+                <div class="skills-grid">
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span>Unity</span>
+                            <span class="skill-percent">100%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="100"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span>C#</span>
+                            <span class="skill-percent">95%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="95"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span>Version Control (Git Workflow)</span>
+                            <span class="skill-percent">85%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="85"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span>Ad Monetization (Unity Ads, AdMob)</span>
+                            <span class="skill-percent">85%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="85"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span>In-App Purchases (IAP)</span>
+                            <span class="skill-percent">80%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="80"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span>Firebase / Unity Analytics</span>
+                            <span class="skill-percent">75%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="75"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2 class="section-title">Services</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-gamepad"></i>
+                    </div>
+                    <h3>Full Game Development</h3>
+                    <p>End-to-end development of 2D/3D games, from concept to final product.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-rocket"></i>
+                    </div>
+                    <h3>Prototyping and MVP Development</h3>
+                    <p>Rapid development of game prototypes and minimum viable products.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-paint-brush"></i>
+                    </div>
+                    <h3>UI/UX Design and Development</h3>
+                    <p>Creating intuitive and visually appealing user interfaces for games.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-plug"></i>
+                    </div>
+                    <h3>Integrating Third-party Services</h3>
+                    <p>Setting up services like Firebase, in-app purchases, and push notifications.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-layer-group"></i>
+                    </div>
+                    <h3>Level Design</h3>
+                    <p>Designing engaging game levels and environments.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-dollar-sign"></i>
+                    </div>
+                    <h3>In-game Monetization Features</h3>
+                    <p>Implementing ads, rewarded videos, and microtransactions.</p>
+                </div>
+            </div>
+            <div class="stats">
+                <div class="stat-item">
+                    <div class="stat-number" data-target="3">0</div>
+                    <div class="stat-label">Platforms</div>
+                    <div class="stat-detail" style="font-size: 0.85rem; color: var(--text-light); margin-top: 0.5rem;">Android • iOS • Amazon</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-target="100" data-suffix="+">0</div>
+                    <div class="stat-label">Projects</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-target="1453">0</div>
+                    <div class="stat-label">Hours Of Support</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-target="4">0</div>
+                    <div class="stat-label">Clients</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <h2 class="section-title">Portfolio</h2>
+            <p class="section-subtitle">Here are the games I've developed and contributed to, showcasing my skills and creativity in Unity game development</p>
+            <div class="portfolio-filters">
+                <button class="filter-btn active" data-filter="all"><span>All</span></button>
+                <button class="filter-btn" data-filter="puzzle"><span>Puzzle</span></button>
+                <button class="filter-btn" data-filter="simulation"><span>Simulation</span></button>
+            </div>
+            <div class="portfolio-grid">
+                <div class="portfolio-item" data-category="puzzle">
+                    <div class="portfolio-image">
+                        <img src="images/Relaxing Antistress Mini Games.png" alt="Relaxing Antistress Mini Games" onerror="this.src='https://via.placeholder.com/400x300/4a90e2/ffffff?text=Relaxing+Antistress'">
+                        <div class="portfolio-overlay">
+                            <span class="portfolio-tag">Puzzle</span>
+                            <h3>Relaxing Antistress Mini Games</h3>
+                            <p>ASMR-inspired minigames collection for stress relief and relaxation</p>
+                            <div class="portfolio-links">
+                                <a href="https://play.google.com/store/apps/details?id=com.lgs.mini.antistress.relaxing.toys.fun.asmr.stisfeel.game" class="portfolio-link" title="View on Play Store (Android)" target="_blank"><i class="fab fa-google-play"></i></a>
+                                <a href="https://apps.apple.com/us/app/mini-relaxing-antistress-games/id6745509472" class="portfolio-link" title="View on App Store (iOS)" target="_blank"><i class="fab fa-apple"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="simulation">
+                    <div class="portfolio-image">
+                        <img src="images/Wild Horse Family Riding Game .jpeg" alt="Wild Horse Family Riding Game" onerror="this.src='https://via.placeholder.com/400x300/27ae60/ffffff?text=Wild+Horse+Family'">
+                        <div class="portfolio-overlay">
+                            <span class="portfolio-tag">Simulation</span>
+                            <h3>Wild Horse Family Riding Game</h3>
+                            <p>Virtual family survival simulator with wild horse gameplay</p>
+                            <div class="portfolio-links">
+                                <a href="https://play.google.com/store/apps/details?id=com.lgs.wild.virtual.horse.simulator.family.survival.game" class="portfolio-link" title="View on Play Store (Android)" target="_blank"><i class="fab fa-google-play"></i></a>
+                                <a href="https://apps.apple.com/us/app/wild-horse-equestrian-family/id6474333096" class="portfolio-link" title="View on App Store (iOS)" target="_blank"><i class="fab fa-apple"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="simulation">
+                    <div class="portfolio-image">
+                        <img src="images/Flying Wild Cat Care Sim 3D.jpeg" alt="Flying Wild Cat Care Sim 3D" onerror="this.src='https://via.placeholder.com/400x300/e74c3c/ffffff?text=Flying+Wild+Cat'">
+                        <div class="portfolio-overlay">
+                            <span class="portfolio-tag">Simulation</span>
+                            <h3>Flying Wild Cat Care Sim 3D</h3>
+                            <p>3D simulation game featuring wild cat care and flying mechanics</p>
+                            <div class="portfolio-links">
+                                <a href="https://play.google.com/store/apps/details?id=com.lgs.wild.flying.cat.care.simulator.game" class="portfolio-link" title="View on Play Store (Android)" target="_blank"><i class="fab fa-google-play"></i></a>
+                                <a href="https://apps.apple.com/us/app/kitty-fly-cat-adventure/id6739433003" class="portfolio-link" title="View on App Store (iOS)" target="_blank"><i class="fab fa-apple"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="simulation">
+                    <div class="portfolio-image">
+                        <img src="images/Wild Unicorn Horse Family Sim .jpeg" alt="Wild Unicorn Horse Family Sim" onerror="this.src='https://via.placeholder.com/400x300/16a085/ffffff?text=Wild+Unicorn'">
+                        <div class="portfolio-overlay">
+                            <span class="portfolio-tag">Simulation</span>
+                            <h3>Wild Unicorn Horse Family Sim</h3>
+                            <p>Family simulation game with wild unicorn and horse characters</p>
+                            <div class="portfolio-links">
+                                <a href="https://play.google.com/store/apps/details?id=com.lgs.unicorn.horse.magical.pony.dash.care.simulator.quest.game" class="portfolio-link" title="View on Play Store (Android)" target="_blank"><i class="fab fa-google-play"></i></a>
+                                <a href="https://apps.apple.com/us/app/wild-unicorn-horse-family-sim/id6503604259" class="portfolio-link" title="View on App Store (iOS)" target="_blank"><i class="fab fa-apple"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="simulation">
+                    <div class="portfolio-image">
+                        <img src="images/My Parrot Life Simulator Game.jpeg" alt="My Parrot Life Simulator Game" onerror="this.src='https://via.placeholder.com/400x300/e67e22/ffffff?text=My+Parrot'">
+                        <div class="portfolio-overlay">
+                            <span class="portfolio-tag">Simulation</span>
+                            <h3>My Parrot Life Simulator Game</h3>
+                            <p>Interactive parrot life simulation with care and feeding mechanics</p>
+                            <div class="portfolio-links">
+                                <a href="https://play.google.com/store/apps/details?id=com.lgs.wild.parrot.bird.pet.family.land.life.care.survival.simulator.game" class="portfolio-link" title="View on Play Store (Android)" target="_blank"><i class="fab fa-google-play"></i></a>
+                                <!-- Parrot game ka iOS link nahi hai -->
+                                <a href="https://apps.apple.com/us/developer/abid-nadeem/id1364514551" class="portfolio-link" title="View Developer on App Store (iOS)" target="_blank"><i class="fab fa-apple"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="simulation">
+                    <div class="portfolio-image">
+                        <img src="images/City Food Delivery Cargo Game .jpeg" alt="City Food Delivery: Cargo Game" onerror="this.src='https://via.placeholder.com/400x300/c0392b/ffffff?text=City+Food+Delivery'">
+                        <div class="portfolio-overlay">
+                            <span class="portfolio-tag">Simulation</span>
+                            <h3>City Food Delivery: Cargo Game</h3>
+                            <p>Food delivery simulation game with cargo and city exploration</p>
+                            <div class="portfolio-links">
+                                <a href="https://play.google.com/store/apps/details?id=com.lgs.pizza.moto.bike.sim.delivery.boy.game" class="portfolio-link" title="View on Play Store (Android)" target="_blank"><i class="fab fa-google-play"></i></a>
+                                <a href="https://apps.apple.com/us/app/food-hustle-delivery-game/id1382558888" class="portfolio-link" title="View on App Store (iOS)" target="_blank"><i class="fab fa-apple"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="simulation">
+                    <div class="portfolio-image">
+                        <img src="images/Virtual Wild Rhino Family Sim.jpeg" alt="Virtual Wild Rhino Family Sim" onerror="this.src='https://via.placeholder.com/400x300/8e44ad/ffffff?text=Wild+Rhino'">
+                        <div class="portfolio-overlay">
+                            <span class="portfolio-tag">Simulation</span>
+                            <h3>Virtual Wild Rhino Family Sim</h3>
+                            <p>Wild rhino family survival and simulation experience</p>
+                            <div class="portfolio-links">
+                                <a href="https://play.google.com/store/apps/details?id=com.lgs.rhino.animal.family.hunt.survival.attack.simulator" class="portfolio-link" title="View on Play Store (Android)" target="_blank"><i class="fab fa-google-play"></i></a>
+                                <a href="https://apps.apple.com/us/app/virtual-wild-rhino-family-sim/id6482290011" class="portfolio-link" title="View on App Store (iOS)" target="_blank"><i class="fab fa-apple"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resume Section -->
+    <section id="resume" class="resume">
+        <div class="container">
+            <h2 class="section-title">Resume</h2>
+            <div class="resume-content">
+                <div class="resume-summary">
+                    <h3>Summary</h3>
+                    <div class="summary-card">
+                        <h4>Muhammad Sharyar Bin Zafar</h4>
+                        <p>Unity game developer with 3 years of professional experience in creating mobile games. Currently working at The GameObject, Lahore, specializing in simulation games, puzzle games, and hyper-casual titles.</p>
+                        <div class="summary-info">
+                            <p><i class="fas fa-map-marker-alt"></i> New Garden Town, Lahore, Pakistan</p>
+                            <p><i class="fas fa-phone"></i> (+92) 315-6389303</p>
+                            <p><i class="fas fa-envelope"></i> sheryrao30@gmail.com</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="resume-sections">
+                    <div class="resume-section">
+                        <h3>Education</h3>
+                        <div class="timeline">
+                            <div class="timeline-item">
+                                <div class="timeline-date">2019 - 2023</div>
+                                <div class="timeline-content">
+                                    <h4>Bachelor of Science in Information Technology (BS-IT)</h4>
+                                    <p class="timeline-location">University of Okara, Okara, Pakistan</p>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-date">2017 - 2019</div>
+                                <div class="timeline-content">
+                                    <h4>FSc (Pre Engineering)</h4>
+                                    <p class="timeline-location">Punjab College, Okara, Pakistan</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="resume-section">
+                        <h3>Final Year Project</h3>
+                        <div class="timeline">
+                            <div class="timeline-item">
+                                <div class="timeline-date">2023</div>
+                                <div class="timeline-content">
+                                    <h4>Log Cargo Transport Truck Game</h4>
+                                    <p class="timeline-location">University of Okara - Final Year Project</p>
+                                    <div style="margin: 1rem 0;">
+                                        <img src="images/Log Cargo Transport Truck Game.jpeg" alt="Log Cargo Transport Truck Game" style="width: 100%; max-width: 400px; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); margin-bottom: 1rem;">
+                                    </div>
+                                    <p style="margin-bottom: 1rem; color: var(--text-light); line-height: 1.6;">Final Year Project - A comprehensive offroad truck cargo transportation simulator game developed using Unity. Features realistic 3D graphics, intuitive controls, and engaging cargo transportation challenges across various terrains.</p>
+                                    <ul>
+                                        <li>Developed complete game using Unity and C#</li>
+                                        <li>Implemented realistic 3D graphics and physics</li>
+                                        <li>Designed intuitive truck driving controls and cargo transportation mechanics</li>
+                                        <li>Published on Google Play Store</li>
+                                    </ul>
+                                    <div style="margin-top: 1rem;">
+                                        <a href="https://play.google.com/store/apps/details?id=com.croodgames.offroadtruckgames.transport.driving.offroadtrucksimulator" class="btn btn-primary" target="_blank" style="display: inline-flex; align-items: center; gap: 0.5rem;">
+                                            <i class="fab fa-google-play"></i>
+                                            <span>View on Play Store</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="resume-section">
+                        <h3>Professional Experience</h3>
+                        <div class="timeline">
+                            <div class="timeline-item">
+                                <div class="timeline-date">2023 - Present</div>
+                                <div class="timeline-content">
+                                    <h4>Unity Game Developer</h4>
+                                    <p class="timeline-location">The GameObject, Lahore, Pakistan</p>
+                                    <ul>
+                                        <li>Developing mobile games using Unity and C# for multiple platforms</li>
+                                        <li>Creating games for 3 major platforms: Android (Google Play Store), iOS (App Store), and Amazon Appstore</li>
+                                        <li>Specialized in simulation games, puzzle games, and hyper-casual titles</li>
+                                        <li>Integrating Google AdMob, Unity Ads, and Firebase Analytics</li>
+                                        <li>Optimizing games for performance and cross-platform compatibility</li>
+                                        <li>Working on complete game development lifecycle from concept to final product</li>
+                                        <li>Collaborating with team members on game design and development</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Contact</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Address</h3>
+                            <p>New Garden Town, Lahore, Pakistan</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Call Us</h3>
+                            <p>(+92) 315-6389303</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Email Us</h3>
+                            <p>sheryrao30@gmail.com</p>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <input type="text" name="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" name="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" name="subject" placeholder="Subject" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">
+                        <span class="btn-text">Send Message</span>
+                        <span class="btn-loading" style="display: none;">Sending...</span>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; Copyright <strong>Muhammad Sharyar Bin Zafar</strong> All Rights Reserved</p>
+            <p>Designed by Muhammad Sharyar Bin Zafar</p>
+        </div>
+    </footer>
+
+    <div class="loading-overlay" id="loadingOverlay" style="display: none;">
+        <div class="loading-spinner"></div>
+        <p>Your message has been sent. Thank you!</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

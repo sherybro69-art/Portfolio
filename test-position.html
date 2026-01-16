@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Test Image Position</title>
+    <style>
+        .test-image {
+            width: 100vw;
+            height: 100vh;
+            object-fit: cover;
+            border: 5px solid red;
+        }
+        
+        /* Different positions to test */
+        .test-1 { object-position: center 50%; }
+        .test-2 { object-position: center 60%; }
+        .test-3 { object-position: center 70%; }
+        .test-4 { object-position: center 80%; }
+        .test-5 { object-position: center 30%; }
+        .test-6 { object-position: center 40%; }
+    </style>
+</head>
+<body>
+    <h1>Test Image Positions</h1>
+    <p>Change the class to test different positions:</p>
+    <img src="images/profile-photo.jpg" class="test-image test-4" alt="Test">
+    
+    <script>
+        // Press number keys 1-6 to switch positions
+        document.addEventListener('keydown', (e) => {
+            const img = document.querySelector('.test-image');
+            if (e.key >= '1' && e.key <= '6') {
+                img.className = 'test-image test-' + e.key;
+                console.log('Position:', img.style.objectPosition || 'center ' + (50 + (parseInt(e.key)-1)*10) + '%');
+            }
+        });
+    </script>
+</body>
+</html>
